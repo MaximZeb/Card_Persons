@@ -1,7 +1,5 @@
-export interface Men {
-    name: string;
-    profession: string;
-}
+import {Men} from "./interface";
+
 export const PERSONS: Men[] = [
     {name: 'Dan Burykin', profession: 'Vue.js Developer'},
     {name: 'Esi Doda', profession: 'Software Developer'},

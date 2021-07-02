@@ -24,3 +24,31 @@
 {
   margin-left: 110px;
 }
+.navbar
+{
+  height: 30px;
+  background-color: #2D3640;
+}
+ul
+{
+  margin: 0 auto;
+  display: inline;
+}
+li
+{
+  display: inline;
+  margin: 15px;
+}
+
+nav a
+{
+  font-family: "Adobe Arabic";
+  font-size:30px;
+  color: white;
+
+}
+nav a:hover
+{
+  color: lime;
+
+}

@@ -1,7 +1,18 @@
+<div class="navbar">
+  <nav>
+    <ul>
+      <li><a routerLink="/card-person" routerLinkActive="active"> Home</a></li>
+      <li><a routerLink="/description-person" routerLinkActive="active">Description person</a></li>
+      <li><a routerLink="/form-person" routerLinkActive="active">Added Person</a></li>
+    </ul>
+  </nav>
+
+</div>
 <div class="title">
-  <h1 class="title__name">Best Developers On The Planet</h1>
+  <h1 class="title__name">{{header | titlecase}}</h1>
   <p class="title__description">This Product integrates with your favorite apps to automate workflows and ensure smooth, productive work days.</p>
 </div>
 <div class="card">
-  <app-card-person></app-card-person>
+  <router-outlet></router-outlet>
 </div>
+
