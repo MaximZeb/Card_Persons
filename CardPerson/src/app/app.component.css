@@ -1,0 +1,26 @@
+.title
+{
+    margin: 40px;
+}
+.title__name
+{
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    margin:10px;
+}
+.title__description
+{
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    margin: 10px;
+}
+.card
+{
+  margin-left: 110px;
+}
