@@ -1,1 +1,23 @@
 <h2>Form Person</h2>
+<form action="" [formGroup]="cardPerson" (ngSubmit)="send()">
+
+  <label for="name">Name:</label>
+  <input
+    id="name"
+    type="text"
+    formControlName="name"
+    [(ngModel)]="this.cardPerson.value.name"
+  >
+
+  <label for="profession">Profession:</label>
+  <input
+    id="profession"
+    type="text"
+    formControlName="profession"
+    [(ngModel)]="this.cardPerson.value.profession"
+  >
+
+  <button type="submit" [disabled]="!cardPerson.valid">Send</button>
+
+</form>
+
