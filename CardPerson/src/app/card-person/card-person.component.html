@@ -1,11 +1,12 @@
 <div class="CardPerson" *ngFor="let men of Persons">
     <div class="CardPerson__Description">
-      <p class="CardPerson__Description__name">{{ men.name }}</p>
-      <p class="CardPerson__Description__profession">{{ men.profession }}</p>
-
+      <p class="CardPerson__Description__name">{{ men.name | titlecase}}</p>
+      <p class="CardPerson__Description__profession">{{ men.profession | titlecase}}</p>
+      <div class="CardPerson__Description__img"><img style="" src={{men.src}} alt="Avatarka"></div>
       <button class="delete" title="delete hero"
               (click)="delete(men.name)">x</button>
     </div>
 
 
 </div>
+

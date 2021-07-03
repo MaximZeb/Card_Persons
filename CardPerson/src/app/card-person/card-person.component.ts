@@ -1,6 +1,6 @@
 import { PERSONS } from './../person';
 import { Component } from '@angular/core';
-import {Men} from "../interface";
+import {Men, Per} from "../interface";
 
 @Component({
     selector: 'app-card-person',
@@ -9,6 +9,8 @@ import {Men} from "../interface";
   })
   export class CardPerson  {
     Persons = PERSONS;
+
+
 
     delete(men: string): void {
         this.Persons = this.Persons.filter(n => n.name !== men )

@@ -8,3 +8,36 @@ small {
   color:crimson;
   font-size: 20px;
 }
+form
+{
+  display: grid;
+}
+h2
+{
+  color:black;
+  font-size: 30px;
+}
+label
+{
+  font-size: 20px;
+  margin: 10px;
+}
+input
+{
+  font-size: 20px;
+  height: 40px;
+  border-radius: 10px;
+}
+button
+{
+  border-radius: 50px;
+  color: black;
+  background-color: antiquewhite;
+  margin: 20px;
+  height: 40px;
+  font-size: 30xp;
+}
+button:hover
+{
+  background-color: #EAEDF2;
+}

@@ -14,7 +14,11 @@
 .CardPerson__Description
 {
   display: grid;
-  grid-template-rows: 56px 120px 34px 33px 22px 26px 55px;
+  grid-template-rows: 56px 120px 34px 33px 22px 26px 55px 20px 80px;
+}
+.CardPerson:hover
+{
+  transform: scale(1.1);
 }
 .CardPerson__Description__name
 {
@@ -41,3 +45,25 @@
   margin: 0 auto;
   grid-row: 6;
 }
+.delete
+{
+  color: black;
+  grid-row: -1;
+  width: auto;
+  height: 40px;
+  font-size: 30px;
+}
+.delete:hover
+{
+  background-color: #ff726f;
+}
+.CardPerson__Description__img
+{
+  margin: 0 auto;
+  grid-row: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  border: 5px solid #7FADF4;
+}
+
