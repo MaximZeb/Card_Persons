@@ -2,5 +2,10 @@
     <div class="CardPerson__Description">
       <p class="CardPerson__Description__name">{{ men.name }}</p>
       <p class="CardPerson__Description__profession">{{ men.profession }}</p>
+
+      <button class="delete" title="delete hero"
+              (click)="delete(men.name)">x</button>
     </div>
+
+
 </div>

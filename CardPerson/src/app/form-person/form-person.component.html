@@ -1,13 +1,15 @@
 <h2>Form Person</h2>
-<form action="" [formGroup]="cardPerson" (ngSubmit)="send()">
+<form [formGroup]="cardPerson" (ngSubmit)="send()">
 
   <label for="name">Name:</label>
   <input
     id="name"
     type="text"
     formControlName="name"
+    class="form-control"
     [(ngModel)]="this.cardPerson.value.name"
   >
+
 
   <label for="profession">Profession:</label>
   <input
@@ -16,6 +18,19 @@
     formControlName="profession"
     [(ngModel)]="this.cardPerson.value.profession"
   >
+
+
+  <div
+    *ngIf="cardPerson.invalid && (cardPerson.dirty || cardPerson.touched)"
+    class="alert alert-danger"
+  >
+    <div
+      *ngIf="cardPerson.errors?.minLength === null;"
+    >
+      Длина имении меньше трёх!
+    </div>
+
+  </div>
 
   <button type="submit" [disabled]="!cardPerson.valid">Send</button>
 

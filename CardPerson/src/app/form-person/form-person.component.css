@@ -1,0 +1,10 @@
+input.ng-invalid.ng-touched {
+  border: 1px solid crimson;
+}
+input.ng-valid {
+  border: 1px solid lime;
+}
+small {
+  color:crimson;
+  font-size: 20px;
+}
