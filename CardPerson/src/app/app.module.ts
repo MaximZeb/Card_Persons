@@ -7,6 +7,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import { CardPerson } from './card-person/card-person.component';
 import { DescriptionPersonComponent } from "./DescriptionPerson/description-person.component";
 import { FormPersonComponent } from "./form-person/form-person.component";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FormPersonComponent } from "./form-person/form-person.component";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
